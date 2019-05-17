@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2015-2018 The OpenZipkin Authors
+    Copyright 2015-2019 The OpenZipkin Authors
 
     Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
     in compliance with the License. You may obtain a copy of the License at
@@ -20,17 +20,15 @@
   <parent>
     <groupId>io.zipkin.zipkin2</groupId>
     <artifactId>parent</artifactId>
-    <version>2.12.10-SNAPSHOT</version>
+    <version>2.12.9</version>
   </parent>
 
-  <!-- TODO: group ID change: https://github.com/openzipkin/zipkin/issues/2132 -->
   <groupId>io.zipkin.java</groupId>
   <artifactId>zipkin-ui</artifactId>
   <name>Zipkin UI</name>
   <description>Repackages Zipkin UI jar until its source moves to this repository</description>
 
   <properties>
-    <main.basedir>${project.basedir}/..</main.basedir>
     <frontend-maven-plugin.version>1.7.5</frontend-maven-plugin.version>
   </properties>
 
