@@ -36,26 +36,6 @@
     <tag>HEAD</tag>
   </scm>
 
-  <!-- Developer section is needed for Maven Central, but doesn't need to include each person -->
-  <developers>
-    <developer>
-      <id>openzipkin</id>
-      <name>OpenZipkin Gitter</name>
-      <url>https://gitter.im/openzipkin/zipkin</url>
-    </developer>
-  </developers>
-
-  <distributionManagement>
-    <repository>
-      <id>bintray</id>
-      <url>https://api.bintray.com/maven/openzipkin/maven/zipkin-classic/;publish=1</url>
-    </repository>
-    <snapshotRepository>
-      <id>jfrog-snapshots</id>
-      <url>http://oss.jfrog.org/artifactory/oss-snapshot-local</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <issueManagement>
     <system>Github</system>
     <url>https://github.com/openzipkin/zipkin-classic/issues</url>
@@ -146,16 +126,6 @@
             <phase>none</phase>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>io.zipkin.centralsync-maven-plugin</groupId>
-        <artifactId>centralsync-maven-plugin</artifactId>
-        <version>0.1.0</version>
-        <configuration>
-          <subject>openzipkin</subject>
-          <repo>maven</repo>
-          <packageName>zipkin-classic</packageName>
-        </configuration>
       </plugin>
     </plugins>
   </build>
