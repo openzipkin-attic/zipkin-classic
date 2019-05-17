@@ -25,8 +25,21 @@
 
   <groupId>io.zipkin.java</groupId>
   <artifactId>zipkin-ui</artifactId>
+  <version>2.12.10-SNAPSHOT</version>
   <name>Zipkin UI</name>
   <description>Repackages Zipkin UI jar until its source moves to this repository</description>
+
+  <scm>
+    <url>https://github.com/openzipkin/zipkin-classic</url>
+    <connection>scm:git:https://github.com/openzipkin/zipkin-classic.git</connection>
+    <developerConnection>scm:git:https://github.com/openzipkin/zipkin-classic.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/openzipkin/zipkin-classic/issues</url>
+  </issueManagement>
 
   <properties>
     <frontend-maven-plugin.version>1.7.5</frontend-maven-plugin.version>
