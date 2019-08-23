@@ -4,7 +4,7 @@ const defaults = {
   environment: '',
   suggestLens: false,
   queryLimit: 10,
-  defaultLookback: 60 * 60 * 1000, // 1 hour
+  defaultLookback: 15 * 60 * 1000, // 15 minutes
   searchEnabled: true,
   dependency: {
     lowErrorRate: 0.5, // 50% of calls in error turns line yellow
