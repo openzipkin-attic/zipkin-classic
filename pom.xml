@@ -25,7 +25,7 @@
     <version>2.19.2</version>
   </parent>
 
-  <groupId>io.zipkin.java</groupId>
+  <groupId>io.zipkin.classic</groupId>
   <artifactId>zipkin-ui</artifactId>
   <version>2.12.12-SNAPSHOT</version>
   <name>Zipkin UI</name>
@@ -38,6 +38,39 @@
     </developerConnection>
     <tag>HEAD</tag>
   </scm>
+
+  <organization>
+    <name>OpenZipkin</name>
+    <url>http://zipkin.io/</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <!-- Developer section is needed for Maven Central, but doesn't need to include each person -->
+  <developers>
+    <developer>
+      <id>openzipkin</id>
+      <name>OpenZipkin Gitter</name>
+      <url>https://gitter.im/openzipkin/zipkin</url>
+    </developer>
+  </developers>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray</id>
+      <url>https://api.bintray.com/maven/openzipkin/maven/zipkin-classic/;publish=1</url>
+    </repository>
+    <snapshotRepository>
+      <id>jfrog-snapshots</id>
+      <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <issueManagement>
     <system>Github</system>
@@ -133,6 +166,14 @@
             <phase>none</phase>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>io.zipkin.centralsync-maven-plugin</groupId>
+        <artifactId>centralsync-maven-plugin</artifactId>
+        <version>0.1.1</version>
+        <configuration>
+          <packageName>zipkin-classic</packageName>
+        </configuration>
       </plugin>
     </plugins>
   </build>
