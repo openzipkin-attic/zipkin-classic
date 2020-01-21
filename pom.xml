@@ -14,9 +14,7 @@
     the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -27,7 +25,7 @@
 
   <groupId>io.zipkin.classic</groupId>
   <artifactId>zipkin-ui</artifactId>
-  <version>2.12.12-SNAPSHOT</version>
+  <version>2.12.12</version>
   <name>Zipkin UI</name>
   <description>Repackages Zipkin UI jar until its source moves to this repository</description>
 
@@ -36,7 +34,7 @@
     <connection>scm:git:https://github.com/openzipkin/zipkin-classic.git</connection>
     <developerConnection>scm:git:https://github.com/openzipkin/zipkin-classic.git
     </developerConnection>
-    <tag>HEAD</tag>
+    <tag>2.12.12</tag>
   </scm>
 
   <organization>
