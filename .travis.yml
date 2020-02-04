@@ -1,11 +1,5 @@
 # Run `travis lint` when changing this file to avoid breaking the build.
 
-
-# Use a larger VM as we run a lot of services
-# https://docs.travis-ci.com/user/ci-environment/#Virtualization-environments
-sudo: required
-dist: trusty
-
 cache:
   directories:
   # zipkin-ui gets dependencies via NPM
@@ -14,7 +8,7 @@ cache:
 
 language: java
 
-jdk: openjdk11
+jdk: openjdk13
 
 before_install:
   # parameters used during a release
